@@ -3,7 +3,7 @@ def my_select(collection)
   new_collection = []
   while i < collection.length
     block_given?
-    new_collection << yield(collection[i]) if true
+    new_collection << yield(collection[i])
     i += 1
   end
   new_collection
